@@ -46,7 +46,7 @@ export default class ButtonSubmit extends Component {
     }, 2000);
 
     setTimeout(() => {
-      const { destination } = this.props.destination;
+      const destination  = this.props.destination;
       this.props.navigation.navigate(destination);
       this.setState({isLoading: false});
       this.buttonAnimated.setValue(0);

@@ -18,7 +18,7 @@ class HomeScreen extends React.Component {
         <Logo />
         <Form />
         <SignupSection />
-        <ButtonSubmit navigation={ this.props.navigation } destination='Profile'/>
+        <ButtonSubmit navigation={ this.props.navigation } destination='Webview'/>
         </Wallpaper>
       );
     }

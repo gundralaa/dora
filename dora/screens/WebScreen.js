@@ -4,7 +4,9 @@ import { WebView } from 'react-native-webview';
 
 class WebScreen extends React.Component {
     static navigationOptions = {
-      title: 'Webview',
+        headerMode: 'none',
+        headerVisible: false,
+        header: null
     };
     render() {
       return (
