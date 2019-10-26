@@ -13,13 +13,12 @@ class HomeScreen extends React.Component {
         header: null
     };
     render() {
-      const { navigate } = this.props.navigation;
       return (
         <Wallpaper>
         <Logo />
         <Form />
         <SignupSection />
-        <ButtonSubmit />
+        <ButtonSubmit navigation={ this.props.navigation } destination='Profile'/>
         </Wallpaper>
       );
     }

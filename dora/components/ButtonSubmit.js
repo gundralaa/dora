@@ -46,7 +46,8 @@ export default class ButtonSubmit extends Component {
     }, 2000);
 
     setTimeout(() => {
-      
+      const { destination } = this.props.destination;
+      this.props.navigation.navigate(destination);
       this.setState({isLoading: false});
       this.buttonAnimated.setValue(0);
       this.growAnimated.setValue(0);
@@ -79,7 +80,7 @@ export default class ButtonSubmit extends Component {
             onPress={this._onPress}
             activeOpacity={1}>
             {this.state.isLoading ? (
-              <Text style={styles.text}>LOADING</Text>
+              <Text style={styles.text}></Text>
             ) : (
               <Text style={styles.text}>LOGIN</Text>
             )}
