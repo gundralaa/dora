@@ -12,7 +12,7 @@ class WebScreen extends React.Component {
       return (
         <WebView
           originWhitelist={['*']}
-          source={{ uri: this.props.uri}}
+          source={{ uri: 'https://www.youtube.com/embed/WG8sX8thNWM'}}
           style={{ marginTop: 0 }}
         />
       );
