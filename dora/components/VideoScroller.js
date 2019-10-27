@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, ScrollView, Dimensions , Text} from 'react-native';
 import { WebView } from 'react-native-webview';
-import { TouchableHighlight } from 'react-native-gesture-handler';
+import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler';
 
 const { width, height } = Dimensions.get('window');
 
@@ -43,14 +43,14 @@ export default class VideoScroller extends Component{
               }}>
                   {
                       this.state.videos.map((item, index) => (
-                        <TouchableHighlight key = {item.id} onPress={() => navigate('Webview', {'uri' : item.url})}>
+                        <TouchableOpacity key = {item.id} onPress={() => navigate('Webview', {'uri' : item.url})}>
                             <View style = {styles.view} pointerEvents='none'>
                                 <WebView
                                     originWhitelist={['*']}
                                     source={{ uri: item.url }}
                                 />   
                             </View>
-                        </TouchableHighlight>
+                        </TouchableOpacity>
                      ))
                   }
           </ScrollView>

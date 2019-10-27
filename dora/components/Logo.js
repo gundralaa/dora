@@ -9,7 +9,7 @@ export default class Logo extends Component {
     return (
       <View style={styles.container}>
         <Image source={logoImg} style={styles.image} />
-        <Text style={styles.text}>D O R A</Text>
+        <Text style={styles.text}>DORA</Text>
       </View>
     );
   }
@@ -30,5 +30,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     backgroundColor: 'transparent',
     marginTop: 20,
+    fontSize: 50
   },
 });

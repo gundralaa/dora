@@ -5,6 +5,7 @@ import { Button } from 'react-native';
 import { StyleSheet, Image, Dimensions } from 'react-native';
 import VideoScroller from '../components/VideoScroller';
 import Wallpaper from '../components/Wallpaper';
+import ButtonSubmit from '../components/ButtonSubmit';
 
 const DEVICE_WIDTH = Dimensions.get('window').width;
 const DEVICE_HEIGHT = Dimensions.get('window').height;
@@ -20,16 +21,26 @@ class UserpageScreen extends React.Component {
     render() {
       return (
         <Wallpaper>
+          <View style={styles.block}/>
           <View style={styles.container}>
             <VideoScroller navigation={ this.props.navigation }/>
           </View>
+          <View style={styles.block}/>
         </Wallpaper>
       );
     }
   }
 
   const styles = StyleSheet.create({
-    container: {},
+    container: {
+      flex: 8,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    block: {
+      backgroundColor: '#ffdb58'
+    }
+
   });
 
 export default UserpageScreen;
