@@ -15,7 +15,7 @@ class HomeScreen extends React.Component {
     render() {
       return (
         <Wallpaper>
-        <Logo />
+        <Logo/>
         <Form />
         <SignupSection />
         <ButtonSubmit navigation={ this.props.navigation } destination='Webview'/>
