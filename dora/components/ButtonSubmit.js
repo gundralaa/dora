@@ -82,7 +82,7 @@ export default class ButtonSubmit extends Component {
             {this.state.isLoading ? (
               <Text style={styles.text}></Text>
             ) : (
-              <Text style={styles.text}>LOGIN</Text>
+              <Text style={styles.text}>START</Text>
             )}
           </TouchableOpacity>
           <Animated.View
@@ -122,7 +122,9 @@ const styles = StyleSheet.create({
   },
   text: {
     color: 'white',
+    fontWeight: 'bold',
     backgroundColor: 'transparent',
+    fontSize: 20
   },
   image: {
     width: 24,

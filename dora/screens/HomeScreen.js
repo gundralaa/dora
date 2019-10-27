@@ -15,9 +15,7 @@ class HomeScreen extends React.Component {
     render() {
       return (
         <Wallpaper>
-        <Logo/>
-        <Form />
-        <SignupSection />
+        <Logo />
         <ButtonSubmit navigation={ this.props.navigation } destination='Userpage'/>
         </Wallpaper>
       );
