@@ -1,18 +1,33 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
+import * as Permissions from 'expo-permissions';
+import { Button } from 'react-native';
+import { StyleSheet, Image, Dimensions } from 'react-native';
+import VideoScroller from '../components/VideoScroller';
+
+const DEVICE_WIDTH = Dimensions.get('window').width;
+const DEVICE_HEIGHT = Dimensions.get('window').height;
+const MARGIN = 40;
 
 class UserpageScreen extends React.Component {
     static navigationOptions = {
-      title: 'Userpage',
+      headerMode: 'none',
+      headerVisible: false,
+      header: null
     };
+
     render() {
-      const { navigate } = this.props.navigation;
       return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-          <Text>Hello, world!</Text>
+
+        <View style={styles.container}>
+          <VideoScroller navigation={ this.props.navigation }/>
         </View>
       );
     }
   }
+
+  const styles = StyleSheet.create({
+    container: {},
+  });
 
 export default UserpageScreen;
