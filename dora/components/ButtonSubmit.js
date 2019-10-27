@@ -82,7 +82,7 @@ export default class ButtonSubmit extends Component {
             {this.state.isLoading ? (
               <Text style={styles.text}></Text>
             ) : (
-              <Text style={styles.text}>LOGIN</Text>
+              <Text style={styles.text}>S T A R T</Text>
             )}
           </TouchableOpacity>
           <Animated.View
