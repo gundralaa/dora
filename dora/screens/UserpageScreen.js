@@ -14,8 +14,7 @@ const MARGIN = 40;
 class UserpageScreen extends React.Component {
     static navigationOptions = {
       headerMode: 'none',
-      headerVisible: false,
-      header: null
+      headerVisible: true,
     };
 
     render() {

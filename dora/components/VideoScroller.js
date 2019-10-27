@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     container: {
     },
     view: {
-      marginTop: 100,
+      marginTop: 60,
       width: width - 30,
       margin: 10,
       height: height - 200,
