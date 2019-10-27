@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Dimensions from 'Dimensions';
 import {
   StyleSheet,
   KeyboardAvoidingView,
@@ -8,6 +7,7 @@ import {
   ActivityIndicator,
   TouchableOpacity,
   Image,
+  Dimensions,
 } from 'react-native';
 
 import UserInput from './UserInput';

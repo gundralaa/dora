@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import Dimensions from 'Dimensions';
 import {
   StyleSheet,
   TouchableOpacity,
@@ -10,6 +9,7 @@ import {
   Image,
   Alert,
   View,
+  Dimensions,
 } from 'react-native';
 
 import spinner from '../images/loading.gif';
